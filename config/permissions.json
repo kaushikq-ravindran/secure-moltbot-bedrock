@@ -1,0 +1,88 @@
+{
+    "default": {
+        "allowed_models": [
+            "global.amazon.nova-2-lite-v1:0"
+        ],
+        "max_tokens": 4096,
+        "allowed_actions": [
+            "chat",
+            "summarize",
+            "analyze"
+        ],
+        "rate_limit": {
+            "requests_per_minute": 10,
+            "tokens_per_hour": 100000
+        },
+        "sandbox": {
+            "mode": "all",
+            "scope": "session"
+        }
+    },
+    "main": {
+        "allowed_models": [
+            "global.amazon.nova-2-lite-v1:0",
+            "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "us.amazon.nova-pro-v1:0",
+            "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+        ],
+        "max_tokens": 8192,
+        "allowed_actions": [
+            "chat",
+            "summarize",
+            "analyze",
+            "code",
+            "edit",
+            "exec"
+        ],
+        "rate_limit": {
+            "requests_per_minute": 30,
+            "tokens_per_hour": 500000
+        },
+        "sandbox": {
+            "mode": "off"
+        },
+        "tools": {
+            "allow": [
+                "read",
+                "write",
+                "edit",
+                "exec",
+                "process"
+            ],
+            "deny": [
+                "gateway",
+                "nodes"
+            ]
+        }
+    },
+    "public": {
+        "allowed_models": [
+            "global.amazon.nova-2-lite-v1:0"
+        ],
+        "max_tokens": 2048,
+        "allowed_actions": [
+            "chat"
+        ],
+        "rate_limit": {
+            "requests_per_minute": 5,
+            "tokens_per_hour": 10000
+        },
+        "sandbox": {
+            "mode": "all",
+            "scope": "agent"
+        },
+        "tools": {
+            "allow": [
+                "read"
+            ],
+            "deny": [
+                "exec",
+                "write",
+                "edit",
+                "apply_patch",
+                "browser",
+                "gateway"
+            ]
+        }
+    }
+}
