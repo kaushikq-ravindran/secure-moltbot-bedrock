@@ -38,6 +38,10 @@ Attacker → Reverse Proxy → Gateway (sees "localhost") → FULL ACCESS
                      API Keys Stolen, Commands Executed
 ```
 
+<p align="center">
+  <img src="images/threat-model.png" alt="Threat Model Diagram" width="700"/>
+</p>
+
 ### Our Solution
 
 We implement **defense-in-depth** with 5 security modules that validate every request before it reaches Bedrock:
