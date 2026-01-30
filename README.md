@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/security-architecture.png" alt="Secure MoltBot Bedrock" width="600"/>
+  <img src="https://github.com/kaushikq-ravindran/secure-moltbot-bedrock/blob/main/images/3.png" alt="Secure MoltBot Bedrock" width="600"/>
 </p>
 
 <h1 align="center">🔐 Secure MoltBot on AWS Bedrock</h1>
